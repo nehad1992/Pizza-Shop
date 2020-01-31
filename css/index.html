@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pig-Dice</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Pig-Dice</h1>
+    <h3> Click the button below to start the game:</h3>
+    <hr>
+    <br>
+    <h2>Player 1</h2>
+    <br>
+    <button id="rollme_1">Roll Me</button>
+    <br>
+    <div id="rollValue_1"></div>
+    <br>
+    <div class="rollSum_1"></div>
+    <br>
+    <br>
+    <button id="hold_1">hold</button>
+    <div class="rollSum_1"></div>
+    <h3>Your total score is : <span id="result_1"></span></h3>
+    <br>
+    <h2 class="alert"></h2>
+    <hr>
+    <br>
+    <br>
+    <h2>Player 2</h2>
+    <br>
+    <button id="rollme_2">Roll Me</button>
+    <br>
+    <div id="rollValue_2"></div>
+    <br>
+    <div class="rollSum_2"></div>
+    <br>
+    <br>
+    <button id="hold_2">Hold</button>
+    <div class="rollSum_2"></div>
+    <h3>Your total score is : <span id="result_2"></span></h3>
+    <h1 id="finalWinner">The winner is: <span id="winner"></span></h1>
+
+  </div>
+</body>
+
+</html>
