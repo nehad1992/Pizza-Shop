@@ -18,33 +18,97 @@ function Hybrid(text, value) {
 // Calculate cost of size
 Pizza.prototype.sizeCost = function () {
   if (this.size === "small") {
-    this.cost += parseInt(2);
-  } else if (this.size === medium) {
-    this.cost += parseInt(3);
-  } else if (this.size === larger) {
-    this.cost += parseInt(4);
-  } else {
     this.cost += parseInt(5);
+  } else if (this.size === "medium") {
+    this.cost += parseInt(6);
+  } else if (this.size === "larger") {
+    this.cost += parseInt(7);
+  } else {
+    this.cost += parseInt(8);
   }
 }
 // Calculate cost of cheese
 Pizza.prototype.cheeseCost = function () {
-  if (this.cheese = noCheese) {
-    this.cheese = parseInt(0);
-  } else if (this.cheese = lightCheese) {
-    this.cheese = parseInt(1);
+  if (this.cheese === "noCheese") {
+    this.cost += parseInt(0);
+  } else if (this.cheese === "lightCheese") {
+    this.cost += parseInt(2);
   } else {
-    this.cheese = parseInt(2);
+    this.cost += parseInt(3);
   }
 }
 
 // Calculate cost of Base
 Pizza.prototype.baseCost = function () {
-
+  if (this.base === "original") {
+    this.cost += parseInt(0);
+  } else if (this.base === "thin") {
+    this.cost += parseInt(2);
+  } else if (this.base === "glutenFree") {
+    this.cost += parseInt(4)
+  }
 }
 
+// Calculate cost of Sauce
+Pizza.prototype.sauceCost = function () {
+  if (this.sauce === "bbq") {
+    this.cost += parseInt(2);
+  } else if (this.sauce === "ranch") {
+    this.cost += parseInt(2);
+  } else if (this.sauce === "original") {
+    this.cost += parseInt(0);
+  } else if (this.sauce === "buffalo") {
+    this.cost += parseInt(3)
+  } else {
+    this.cost += parseInt(4);
+  }
+}
+// Calculate cost of proteins added
+Pizza.prototype.proteinCost = function () {
+  if (this.protein === "grilledChicken") {
+    this.cost += parseInt(4);
+  } else if (this.protein === "beef") {
+    this.cost += parseInt(3);
+  } else if (this.protein === "bacon") {
+    this.cost += parseInt(4);
+  } else if (this.protein === "sasuage") {
+    this.cost += parseInt(3);
+  } else if (this.protein === "peproni") {
+    this.cost += parseInt(3);
+  } else {
+    this.cost += parseInt(0);
+  }
+}
+// Calculate cost of veggies
+Pizza.prototype.veggiesCost = function () {
+  if (this.veggies === "pineapple") {
+    this.cost += parseInt(4);
+  } else if (this.veggies === "mushrooms") {
+    this.cost += parseInt(4);
+  } else if (this.veggies === "greenPeppers") {
+    this.cost += parseInt(3);
+  } else if (this.veggies === "onions") {
+    this.cost += parseInt(5);
+  } else if (this.veggies === "bananaPeppers") {
+    this.cost += parseInt(3);
+  } else if (this.veggies === "romaTomato") {
+    this.cost += parseInt(2);
+  } else if (this.veggies === "spinach") {
+    this.cost += parseInt(3);
+  } else if (this.veggies === "roastedGarlic") {
+    this.cost += parseInt(2);
+  } else if (this.veggies === "blackOlives") {
+    this.cost += parseInt(3);
+  }
+}
+// Calculate final cost
 Pizza.prototype.totalCost = function () {
-  this.sizeCost();
+  // this.sizeCost();
+  // this.cheeseCost();
+  // this.baseCost();
+  // this.sauceCost();
+  this.proteinCost();
+  //   this.veggiesCost();
 }
 
 
@@ -63,6 +127,7 @@ $(document).ready(function () {
     $.each($("input[name='protein']:checked"), function () {
       protein.push($(this).val());
     });
+    console.log(protein);
     var veggies = [];
     $.each($("input[name='veggies']:checked"), function () {
       veggies.push($(this).val());
