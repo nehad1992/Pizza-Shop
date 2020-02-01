@@ -7,7 +7,7 @@ function Pizza(size, base, cheese, sauce, protein, veggies) {
   this.sauce = sauce;
   this.protein = protein;
   this.veggies = veggies;
-  this.cost = 0;
+  this.cost = parseInt(0);
 }
 
 function Hybrid(text, value) {
@@ -103,12 +103,12 @@ Pizza.prototype.veggiesCost = function () {
 }
 // Calculate final cost
 Pizza.prototype.totalCost = function () {
-  // this.sizeCost();
-  // this.cheeseCost();
-  // this.baseCost();
-  // this.sauceCost();
+  this.sizeCost();
+  this.cheeseCost();
+  this.baseCost();
+  this.sauceCost();
   this.proteinCost();
-  //   this.veggiesCost();
+  this.veggiesCost();
 }
 
 
@@ -127,13 +127,14 @@ $(document).ready(function () {
     $.each($("input[name='protein']:checked"), function () {
       protein.push($(this).val());
     });
-    console.log(protein);
     var veggies = [];
     $.each($("input[name='veggies']:checked"), function () {
       veggies.push($(this).val());
     });
     var pizza = new Pizza(size, base, cheese, sauce, protein, veggies);
     pizza.totalCost();
+    $("#totalCost").text(pizza.cost);
+    $(".total").show();
     console.log(pizza.cost);
 
 

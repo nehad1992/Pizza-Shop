@@ -1,0 +1,38 @@
+h1{
+  text-align: center;
+  font-size: 70px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 400px;
+  height: 200px;
+  color: white;
+  background-color: #D71F2B;
+  margin-top: 40px;
+  border: 5px solid white;
+}
+#img1 {
+  float: center;
+}
+#img2 {
+  float: right;
+  width: 440px;
+  height: 340px;
+}
+#veg1 {
+ width: 200px;
+ height: 200px;
+} 
+ #veg2 {
+  width: 200px;
+  height: 200px;
+}
+#veg3 {
+  width: 200px;
+  height: 200px;
+}
+.total {
+  display: none;
+}

@@ -2,135 +2,52 @@
 <html>
 
 <head>
-    <link href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
-        rel=" stylessheet">
-    <link href="css/styles.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pizza Shop</title>
 </head>
 
 <body>
-    <h1>Pizza Shop</h1>
     <div class="container">
-        <div id="formOne">
-            <form id="pizza">
-                <h2>Create Your Own Pizza:</h2>
-                <h3>Size:</h3>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="size" value="small">
-                        Small
-                    </label>
+        <h1>Baba Rancho Pizza</h1>
+        <img src="pizza.jpg" id="img1">
+        <img src="chicken-wings.jpg" id="img2">
+        <h2><a href="index1.html">Create your own pizza</a></h2>
+        <div class="jumbotron">
+            <h2>Meatless Specialties</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Fresh Spinach and Tomato Alfredo</h4>
                     <br>
-                    <label>
-                        <input type="radio" name="size" value="medium">
-                        Medium
-                    </label>
                     <br>
-                    <label>
-                        <input type="radio" name="size" value="large">
-                        Large
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="size" value="extraLarge">
-                        Extra Large
-                    </label>
+                    <img src="veg1.jpg" id="veg1">
+                    <p>$22.99<br>
+                        210 cal/slice, 6 slices
+                    </p>
                 </div>
-                <br>
-                <h3>Base</h3>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="base" value="original">
-                        Original
-                    </label>
+                <div class="col-md-4">
+                    <h4>Garden Fresh</h4>
                     <br>
-                    <label>
-                        <input type="radio" name="base" value="thin">
-                        Thin
-                    </label>
                     <br>
-                    <label>
-                        <input type="radio" name="base" value="glutenFree">
-                        Gluten-Free
-                    </label>
+                    <img src="veg2.jpg" id="veg2">
+                    <p>
+                        $20.99<br>
+                        200 cal/slice, 6 slices
+                    </p>
                 </div>
-                <br>
-                <h3>Cheese</h3>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="cheese" value="noCheese">
-                        No Cheese
-                    </label>
+                <div class="col-md-4">
+                    <h4>Classic Cheese Pizza</h4>
                     <br>
-                    <label>
-                        <input type="radio" name="cheese" value="lightCheese">
-                        Light Cheese
-                    </label>
                     <br>
-                    <label>
-                        <input type="radio" name="cheese" value="normalCheese">
-                        Normal Cheese
-                    </label>
-                    <br>
+                    <img src="veg3.jpg" id="veg3">
+                    <p>
+                        $23.99<br>
+                        270cal/slice , 6 slices
+                    </p>
                 </div>
-                <br>
-                <h3>Sauce</h3>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="sauce" value="bbq">
-                        BBQ
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="sauce" value="ranch">
-                        Ranch
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="sauce" value="original">
-                        Original
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="sauce" value="buffalo">
-                        Buffalo
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="sauce" value="alfredoSauce">
-                        Alfredo Sauce
-                    </label>
-                </div>
-                <br>
-                <h3>Protein</h3>
-                <br>
-                <input type="checkbox" name="protein" value="grilledChicken">Grilled Chicken ($4)<br>
-                <input type="checkbox" name="protein" value="beef">Beef ($3) <br>
-                <input type="checkbox" name="protein" value="bacon">Bacon ($4)<br>
-                <input type="checkbox" name="protein" value="sausage">Sausage ($3)<br>
-                <input type="checkbox" name="protein" value="peproni">Peproni ($3)<br>
-                <input type="checkbox" name="protein" value="noMeat">No Meat ($0)<br>
-                <br>
-                <br>
-                <h3>Veggies</h3>
-                <br>
-                <input type="checkbox" name="veggies" value="pineapple">Pineapple ($4)<br>
-                <input type="checkbox" name="veggies" value="mushrooms">Mushrooms<br>
-                <input type="checkbox" name="veggies" value="greenPeppers">Green Peppers <br>
-                <input type="checkbox" name="veggies" value="onions">Onions<br>
-                <input type="checkbox" name="veggies" value="bananaPeppers">Banana Peppers<br>
-                <input type="checkbox" name="veggies" value="romaTomato">Roma Tomamto<br>
-                <input type="checkbox" name="veggies" value="spinach">Spinach<br>
-                <input type="checkbox" name="veggies" value="roastedGarlic">Roasted Garlic<br>
-                <input type="checkbox" name="veggies" value="blackOlives">Black Olives<br>
-
-                <button type="submit">Submit</button>
+            </div>
         </div>
     </div>
-    </div>
 </body>
-
-</html>
