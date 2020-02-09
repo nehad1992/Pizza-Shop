@@ -65,40 +65,44 @@ Pizza.prototype.sauceCost = function () {
 }
 // Calculate cost of proteins added
 Pizza.prototype.proteinCost = function () {
-  if (this.protein === "grilledChicken") {
-    this.cost += parseInt(4);
-  } else if (this.protein === "beef") {
-    this.cost += parseInt(3);
-  } else if (this.protein === "bacon") {
-    this.cost += parseInt(4);
-  } else if (this.protein === "sasuage") {
-    this.cost += parseInt(3);
-  } else if (this.protein === "peproni") {
-    this.cost += parseInt(3);
-  } else {
-    this.cost += parseInt(0);
+  for (var i = 0; i < this.protein.length; i++) {
+    if (this.protein[i] === "grilledChicken") {
+      this.cost += parseInt(4);
+    } else if (this.protein[i] === "beef") {
+      this.cost += parseInt(3);
+    } else if (this.protein[i] === "bacon") {
+      this.cost += parseInt(4);
+    } else if (this.protein[i] === "sasuage") {
+      this.cost += parseInt(3);
+    } else if (this.protein[i] === "peproni") {
+      this.cost += parseInt(3);
+    } else {
+      this.cost += parseInt(0);
+    }
   }
 }
 // Calculate cost of veggies
 Pizza.prototype.veggiesCost = function () {
-  if (this.veggies === "pineapple") {
-    this.cost += parseInt(4);
-  } else if (this.veggies === "mushrooms") {
-    this.cost += parseInt(4);
-  } else if (this.veggies === "greenPeppers") {
-    this.cost += parseInt(3);
-  } else if (this.veggies === "onions") {
-    this.cost += parseInt(5);
-  } else if (this.veggies === "bananaPeppers") {
-    this.cost += parseInt(3);
-  } else if (this.veggies === "romaTomato") {
-    this.cost += parseInt(2);
-  } else if (this.veggies === "spinach") {
-    this.cost += parseInt(3);
-  } else if (this.veggies === "roastedGarlic") {
-    this.cost += parseInt(2);
-  } else if (this.veggies === "blackOlives") {
-    this.cost += parseInt(3);
+  for (var i = 0; i < this.veggies.length; i++) {
+    if (this.veggies[i] === "pineapple") {
+      this.cost += parseInt(4);
+    } else if (this.veggies[i] === "mushrooms") {
+      this.cost += parseInt(4);
+    } else if (this.veggies[i] === "greenPeppers") {
+      this.cost += parseInt(3);
+    } else if (this.veggies[i] === "onions") {
+      this.cost += parseInt(5);
+    } else if (this.veggies[i] === "bananaPeppers") {
+      this.cost += parseInt(3);
+    } else if (this.veggies[i] === "romaTomato") {
+      this.cost += parseInt(2);
+    } else if (this.veggies[i] === "spinach") {
+      this.cost += parseInt(3);
+    } else if (this.veggies[i] === "roastedGarlic") {
+      this.cost += parseInt(2);
+    } else if (this.veggies[i] === "blackOlives") {
+      this.cost += parseInt(3);
+    }
   }
 }
 // Calculate final cost
