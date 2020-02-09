@@ -140,13 +140,5 @@ $(document).ready(function () {
     $("#totalCost").text(pizza.cost);
     $(".total").show();
     console.log(pizza.cost);
-
-
-
-
-
-
   });
-
-
 });
